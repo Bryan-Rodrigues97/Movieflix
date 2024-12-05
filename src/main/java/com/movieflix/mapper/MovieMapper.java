@@ -60,8 +60,8 @@ public class MovieMapper {
                 .releaseDate(movie.getReleaseDate())
                 .createdAt(movie.getCreatedAt())
                 .updatedAt(movie.getUpdatedAt())
-                .categories(movie.getCategories())
-                .streamings(movie.getStreamings())
+                .categories(categories)
+                .streamings(services)
                 .build();
     }
 

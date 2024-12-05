@@ -1,7 +1,5 @@
 package com.movieflix.controller.response;
 
-import com.movieflix.entity.Category;
-import com.movieflix.entity.Streaming;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.Builder;
 
@@ -25,7 +23,7 @@ public record MovieResponse(@Schema(type = "lonb", description = "Id do filme.")
                             @Schema(type = "date", description = "Data de atualização do registro no banco.")
                             LocalDateTime updatedAt,
                             @Schema(type = "array", description = "Lista de categorias do filme.")
-                            List<Category> categories,
+                            List<CategoryResponse> categories,
                             @Schema(type = "array", description = "Lista de streamings do filme.")
-                            List<Streaming> streamings) {
+                            List<StreamingResponse> streamings) {
 }
